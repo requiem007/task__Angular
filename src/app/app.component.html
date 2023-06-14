@@ -1,0 +1,12 @@
+<div class="form">
+  <div class="symbols show__password-btn">visibility_off</div>
+  <input type="password" class="password" id="password" required (input)="check($event)"/>
+  <label for="password" class="label">Enter your password</label>
+</div>
+<div class="password__validation">
+  <ul>
+    <app-item [item]="easy"></app-item>
+    <app-item [item]="medium"></app-item>
+    <app-item [item]="strong"></app-item>
+  </ul>
+</div>
